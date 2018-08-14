@@ -1,0 +1,21 @@
+Discussions made on 14th August:
+Next meeting : 16th August
+*Uploaded file which explains the tasks to be handled during the phase of this report.
+Tasks to be performed by Tapan 
+Create cassandra database
+•	do all attributes have to be considered while created the table?
+•	Do queries have to be created before creating data tables in Cassandra?
+Shortlist two queries
+Tasks to be performed by Vernon
+How to link data from Kaggle to Cassandra?
+•	Decide how to use API to integrate Kaggle data into Cassandra
+•	How to make use of the kernel to run queries
+•	Shortlist two queries
+Tasks to be performed by Nandini:
+•	Identifying issues in the dataset 
+•	The use of at least three data analytics models 
+•	Data cleansing and pre-processing
+•	Data visualization
+•	Shortlist two queries
+
+
