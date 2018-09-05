@@ -1,0 +1,25 @@
+CREATE KEYSPACE IF NOT EXISTS Data_Db WITH replication = {'class':'SimpleStrategy', 'replication_factor':3};
+USE Data_Db;
+
+CREATE TABLE IF NOT EXISTS full_table (id int, score int, by_person varchar,
+  time int,
+  timestamp timestamp,
+  title varchar,
+  type varchar,
+  url varchar,
+  text varchar,
+  parent int,
+  deleted boolean,
+  dead boolean,
+  descendants int,
+  ranking int,
+  PRIMARY KEY (id));
+
+Query
+SELECT by_person,title,timestamp FROM full_table ORDER BY timestamp desc;
+
+
+
+
+select * from full_table;
+
