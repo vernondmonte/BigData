@@ -1,20 +1,19 @@
-CREATE KEYSPACE learning WITH replication = {'class':'SimpleStrategy', 'replication_factor':3};
-Create table learning.full
-( by CHAR
-  score INT
-  time INT
-  timestamp TIMESTAMP
-  title TEXT
-  type CHAR
-  url VARCHAR
-  text TEXT
-  parent INT
-  deleted BOOLEAN
-  dead BOOLEAN
-  descendants INT
-  id INT
-  ranking SMALLINT
-  primary key(id));
+CREATE KEYSPACE IF NOT EXISTS Data_Db WITH replication = {'class':'SimpleStrategy', 'replication_factor':3};
+USE Data_Db;
+
+CREATE TABLE IF NOT EXISTS full (id INT, score INT, by VARCHAR,
+  time INT,
+  timestamp TIMESTAMP,
+  title VARCHAR,
+  type VARCHAR,
+  url VARCHAR,
+  text VARCHAR,
+  parent INT,
+  deleted BOOLEAN,
+  dead BOOLEAN,
+  descendants INT,
+  ranking INT,
+  PRIMARY KEY(id));
 
 Query
 SELECT by,title,timestamp FROM full ORDER BY timestamp desc;
